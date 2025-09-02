@@ -1,0 +1,9 @@
+#!name=Alcove
+#!desc=Active Alcove
+#!category=InjectX
+
+[Script]
+http-response ^https:\/\/api\.tryalcove\.com.*$ script-path=https://raw.githubusercontent.com/inject-X/SurgeModule/main/Alcove/Alcove.js, requires-body=true, timeout=10, tag=Alcove
+
+[MITM]
+hostname = api.tryalcove.com
